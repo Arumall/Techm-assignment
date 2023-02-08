@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Shopping App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class = "container">
+         <nav class = "navbar">
+            <i class="fa fa-list list-icon" aria-hidden="true"></i>
+            <i class="fa fa-th grid-icon" aria-hidden="true"></i>
+            <div class="select-name">
+              <label>Name: </label>
+              <select id="#namesort">
+                <option value='All'>All</option>
+                <option value='A-Z'>A-Z</option>
+                <option value='Z-A'>Z-A</option>
+              </select>
+            </div> 
+            <div class="select-price">
+              <label>Price: </label>
+              <select id="#pricesort">
+                <option value='All'>All</option>
+                <option value='Price Low to High'>Low to High</option>
+                <option value='Price High to Low'>High to Low</option>
+              </select>
+            </div> 
+            <div class = "filter">
+              <button type = "button" id = "filter-btn">
+                <i class="fa fa-filter"><span class="filter-icon">Filter</span></i>
+              </button>
+              <div class = "filter-container">
+                <div class = "filter-list">
+                  <form>
+                    <label>Filter by name:</label>
+                    <input type="search" placeholder="Search...">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+                </div>
+                <label>Filter by price:</label>
+                <div class="min-max">
+                  <div class="min">
+                    <label>Min</label><span id="min-value"></span>
+                  </div>
+                  <div class="max">
+                    <label>Max</label><span id="max-value"></span>
+                  </div>     
+                </div>    
+                <div class="min-max-range">
+                    <input type="range" min="0" max="50000" value="0" class="range" id="min">
+                    <input type="range" min="50001" max="100000" value="100000" class="range" id="max">      
+                </div>    
+                <div class="filter-buttons">
+                  <button class="cancel">Cancel</button>
+                  <button class="save">Save</button>
+                </div>
+              </div>
+            </div>
+            <div class="sortby">
+              <label>Sort by: </label>
+                <select id="#sort">
+                  <option value='Name'>Name</option>
+                  <option value='Price Low to High'>Price: Low to High</option>
+                  <option value='Price High to LOw'>Price: High to Low</option>
+                </select>
+            </div> 
+            <div class = "cart">
+              <div class = "cart-container">
+                <div class ="mycart"><h2>My Cart</h2></div>
+                <div class = "cart-list">
+                  <div class="product-data">
+                    <div class="productName"></div>
+                    <div class=" productPrice"></div>
+                    <div class="productHiddenPrice"></div>
+                  </div>   
+                </div>
+                <div class="price">
+                <div class = "sub-total">
+                  <p>Sub total</p>
+                  <span id = "sub-total-value"></span>
+                </div>
+                <div class="tax">
+                  <p>Service Tax(21%)</p>
+                  <span id = "tax-value"></span>
+                </div>
+                <div class="discount">
+                    <p>Discount(20%)</p>
+                    <span id = "discount-value"></span>
+                 </div>
+              </div>
+              <div class = "cart-total">
+                  <h3>Total: </h3>
+                  <span id = "cart-total-value"></span>
+              </div>
+              </div>
+            </div>
+         </nav>
+      </div>
+    </header>
+    <section class = "products">
+      <div class = "container">
+        <div class = "product-list"></div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>

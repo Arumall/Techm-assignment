@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <div class="section1">
+      <div class="container">
+        <h2>Weather Dashboard</h2>
+      </div>
+    </div>
+    <div class="section2">
+      <div class="container">
+        <form>
+          <label>Select: </label>
+          <select class="city-list" id="City"></select>
+          <button type="submit" class="add">Add</button>
+          <div id="message"></div>
+          <button type="button" class="load" onClick="window.location.reload()">Reload</button>
+        </form> 
+      </div>
+    </div>
+    <div class="section3">
+      <div class="container">
+        <ul class="cities"></ul>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <button type="button" class="save">Save</button>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

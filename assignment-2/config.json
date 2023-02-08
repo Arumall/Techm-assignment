@@ -1,0 +1,59 @@
+
+  [
+    {
+      "cityType": "City",
+      "cityID": "City"
+    },
+   {
+      "cityType": "Thenali",
+      "cityID": "Thenali"
+    },
+    {
+      "cityType": "Vijayawada",
+      "cityID": "Vijayawada"
+    },
+    {
+      "cityType": "Hyderabad",
+      "cityID": "Hyderabad"
+    },
+    {
+      "cityType": "Chennai",
+      "cityID": "Chennai"
+    },
+    {
+      "cityType": "Visakhapatnam",
+      "cityID": "Visakhapatnam"
+    },
+    {
+      "cityType": "Delhi",
+      "cityID": "Delhi"
+    },
+    {
+      "cityType": "Simla",
+      "cityID": "Simla"
+    },
+    {
+      "cityType": "Ooty",
+      "cityID": "Ooty"
+    },
+    {
+      "cityType": "Mumbai",
+      "cityID": "Mumbai"
+    },
+    {
+      "cityType": "Pune",
+      "cityID": "Pune"
+    },
+    {
+      "cityType": "Guntur",
+      "cityID": "Guntur"
+    },
+    {
+      "cityType": "Gudivada",
+      "cityID": "Gudivada"
+    },
+    {
+      "cityType": "Mysore",
+      "cityID": "Mysore"
+    }
+  ]

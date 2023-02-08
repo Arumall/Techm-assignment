@@ -1,0 +1,122 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+}
+header{
+    padding: 2rem 1rem;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+header h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+#todo-form{
+    display: flex;
+}
+
+input,button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#todo-input{
+    flex: 1 1 0%;
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid  #f2e8cf;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+}
+
+#todo-submit{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s;
+    border: 1px solid blue;
+    border-radius: 1rem;
+    padding: 1rem;
+    background: blue;
+}
+
+#todo-submit:hover{
+    opacity: 0.8;
+}
+
+#todo-submit:active{
+    opacity: 0.6;
+}
+.container{
+    background: pink;
+    max-width: 750px;
+    width: 100%;
+    margin: 2rem auto;
+    border-radius: 1rem;
+}
+main{
+    flex: 1 1 0%;                                  
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.todo-list{
+    padding: 1rem;
+}
+
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+#tasks .task .content{
+    flex: 1 1 0%;
+}
+#tasks .task .content .text{
+    font-size: 1.13rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+#tasks .task .actions{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.task .actions button{
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 0 0.5rem;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+.task .actions button:hover{
+    opacity: 0.8;
+}
+
+.task .actions button:active{
+    opacity: 0.6;
+}
+.task .actions .Edit{
+    color: #00c78a;
+}
+.task .actions .Delete{
+    color: crimson;
+}
+

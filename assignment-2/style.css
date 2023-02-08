@@ -1,0 +1,184 @@
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-weight: normal;
+}
+body {
+   background: #92b3eb;
+   color: #1e2432;
+   padding: 0 70px;
+   font-family: sans-serif;
+}
+.container {
+   padding: 0 20em;
+}
+
+/* SECTION #1
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section1 {
+   background: #FFC0CB;
+}
+.section1 h2 {
+   margin-bottom: 50px;
+   text-align: center;
+   font-weight: 700;
+   font-size: 30px;
+   text-transform: uppercase;
+   padding: 10px;
+}
+
+/* SECTION #2
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section2 form select {
+   padding: 10px;
+   margin-left: 10px;
+   background: #ffffff;
+   border: 1px solid #000000;
+   outline: none;
+   border-radius: 5px;
+}
+.section2 form {
+   position: relative;
+   display: flex;
+   align-items: center;
+   padding-bottom: 15px;
+   border-bottom: 1px solid blue;
+}
+.section2 form .add,.section2 form .load {
+   font-size: 1rem;
+   font-weight: bold;
+   letter-spacing: 0.1em;
+   padding: 10px;
+   margin-left: 15px;
+   border-radius: 5px;
+   background: #ff8c00;
+   color: #fff;
+   border: none;
+   outline:none;
+}
+.section2 form .load {
+   margin-left: 44.5em;
+}
+.section2 form .add:hover ,.section2 form .load:hover {
+   opacity: 0.8;
+}
+.section2 #message {
+   position: absolute;
+   bottom: -34px;
+   left: 60px;
+   color: red;
+}
+
+/* SECTION #3
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section3 {
+   margin: 70px 0 20px;
+}
+.section3 .cities {
+   display: grid;
+   grid-gap: 32px 20px;
+   grid-template-columns: repeat(3, 1fr);
+   list-style: none;
+   
+}
+.section3 .city {
+   position: relative;
+   padding: 40px 5%;
+   border-radius: 40px;
+   background: #fff;
+}
+.section3 .city::after {
+   content: '';
+   width: 90%;
+   height: 50px;
+   position: absolute;
+   bottom: -12px;
+   left: 5%;
+   z-index: -1;
+   opacity: 0.3;
+   border-radius: 20px;
+   background: #fff;
+}
+.section3 figcaption {
+   text-transform: capitalize;
+} 
+.section3 .city-temp {
+   padding: 10px 0 0 100px;
+   margin-top: 60px;
+   color: #c35817;
+
+}
+.section3 .city-temp .temp {
+   font-size: 75px;
+}
+.section3 .city-temp .celcius {
+   margin-left: 10px;
+   font-size: 55px;
+
+}
+.section3 .city-name {
+   border-bottom: 1px solid blue;
+}
+.section3 .city-icon {
+   width: 50px;
+}
+.section3 .city-name .citys ~  .citys::before {
+   content: ', '; 
+}
+ .section3 .city-name .delete-icon {
+   float: right;
+   color: grey;
+}
+.section3  .feels-like {
+   padding: 3px 0 3px 100px;
+}
+.section3 .feels-like .celcius {
+   font-size: 13px;
+}
+.sun {
+   display: flex;
+   justify-content: space-between;
+   padding-top: 20px;
+}
+.section3 figure {
+   float: right;
+}
+.sunset img {  
+   width: 92px;
+   height: 48px;
+   margin-left: 20px;
+}
+.sunrise .sunrise-time {
+   margin-left: 10px
+}
+.sunset {
+   margin-top: 20px;
+}
+.sunrise div {
+   margin-left: 25px;
+} 
+.sunset .sunset-time {
+   margin-top: 20px;
+   margin-left: 10px;
+}
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.footer {
+   text-align: right;
+   font-size: 1rem;
+   margin-top: 40px;
+ }
+ .footer .save {
+   font-size: 1rem;
+   font-weight: bold;
+   letter-spacing: 0.1em;
+   padding: 10px;
+   margin-left: 15px;
+   border-radius: 5px;
+   background: #ff8c00;
+   color: #fff;
+   border: none;
+   outline:none;
+}
