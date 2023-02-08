@@ -6,25 +6,17 @@ fetch('config.json')
 .then(data =>{
     let html = '';
     data.forEach(city => {
-        html += `
-                  
-                    <option value="${city.cityType}">${city.cityType}</option>
-
+        html += `        
+          <option value="${city.cityType}">${city.cityType}</option>
         `;
     });
     citylist.innerHTML = html;
     
 })
-
-
 .catch(error => {
     alert(`User live server or local server`);
-    //URL scheme must be "http" or "https" for CORS request. You need to be serving your index.html locally or have your site hosted on a live server somewhere for the Fetch API to work properly.
 })
-form.addEventListener("submit", e => {        var elem= document.getElementById("add-to-cart-btn");
-function mycart() {
-    elem.classList.add('show-cart-container');
-}
+form.addEventListener("submit", e => {      
   e.preventDefault();
   let validate = ValidateCity();
   document.getElementById("message").innerHTML = validate;
@@ -35,14 +27,12 @@ function mycart() {
     fetch(url)
       .then(response => response.json())
       .then(data => {
-        
         const { main, name, sys, weather } = data;
         const icon = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${
           weather[0]["icon"]
         }.svg`;
         const date = new Date(data.sys.sunrise * 1000).toLocaleTimeString({hour: '2-digit', minute:'2-digit'});
         const date1 = new Date(data.sys.sunset * 1000).toLocaleTimeString( {hour: '2-digit', minute:'2-digit'});
-      
         const li = document.createElement("li");
         setTimeout(() => {
         li.classList.add("city");
@@ -85,13 +75,4 @@ function ValidateCity() {
   }
   return errorMessage;
 } 
-/* function autoRefresh() {
-  window.location = window.location.href;
-}
-setInterval('autoRefresh()', 2000); */
-/* function removeClass()
-{
- 
-   document.getElementById('icon1').closest('.city').remove("city");
-} 
- */
+
